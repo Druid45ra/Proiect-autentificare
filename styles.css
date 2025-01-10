@@ -1,0 +1,101 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.auth-form {
+    max-width: 400px;
+    /* Dimensiune mai mare */
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    /* Mai mult spațiu intern */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* Aliniere centrală */
+}
+
+.auth-form h1 {
+    font-size: 24px;
+    /* Titlu mai mare */
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    /* Centrat */
+}
+
+input,
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.message.show {
+    opacity: 1;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #aaa;
+}
+
+.auth-form input,
+.auth-form button {
+    width: 90%;
+    /* Redus la 90% din container */
+    margin: 10px auto;
+    /* Centrare pe orizontală */
+    display: block;
+    /* Asigură centrare */
+}
+
+.input-container input {
+    width: 90%;
+    /* Asigură alinierea consistentă */
+    padding-left: 40px;
+    /* Menținem spațiul pentru iconițe */
+}
+
+.toggle-password {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #aaa;
+}

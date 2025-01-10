@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autentificare și Creare Cont</title>
+    <meta name="description" content="Pagina de autentificare și creare cont pentru proiectul web.">
+    <meta name="keywords" content="autentificare, creare cont, proiect web, jQuery">
+    <meta name="author" content="Numele Tău">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <noscript>
+        <style>
+            .no-js-message {
+                display: block;
+                color: red;
+                font-weight: bold;
+                text-align: center;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body>
+    <noscript>
+        <p class="no-js-message">JavaScript este necesar pentru funcționarea acestei pagini. Te rugăm să activezi
+            JavaScript în browserul tău.</p>
+    </noscript>
+
+    <!-- Formular de autentificare -->
+    <div class="auth-form">
+        <h1>Autentificare</h1>
+        <form id="login-form">
+            <label for="email">Email:</label>
+            <div class="input-container">
+                <i class="fa fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="Introdu email-ul" required>
+            </div>
+
+            <label for="password">Parolă:</label>
+            <div class="input-container">
+                <i class="fa fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Introdu parola" required>
+                <i class="fa fa-eye toggle-password"></i>
+            </div>
+
+            <button type="submit">Autentificare</button>
+        </form>
+
+        <p>Nu ai un cont? <a href="register.html">Creează un cont</a></p>
+    </div>
+
+    <!-- Mesaj de eroare/succes -->
+    <div class="message" style="display: none;"></div>
+
+    <!-- Script extern -->
+    <script src="script.js"></script>
+</body>
+
+</html>
